@@ -17,7 +17,7 @@ spec:
       # pod contains 1 container
       containers:
       - name: node
-        image: kanolanacr.azurecr.io/test-node-server:latest 
+        image: kanolanacr.azurecr.io/nodejs-server:latest 
         # container opens port 22137
         ports:
         - containerPort: 22137
@@ -35,7 +35,7 @@ spec:
   type: LoadBalancer
   ports:
     - name: http
-      port: 5000
+      port: 22137
       targetPort: 22137
   selector:
     # Loadbalance traffic across Pods matching
