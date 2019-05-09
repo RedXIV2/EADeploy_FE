@@ -25,13 +25,13 @@ spec:
           protocol: TCP
         readinessProbe:
           tcpSocket:
-            port: 8080
+            port: 22137
           initialDelaySeconds: 60
           periodSeconds: 30
           failureThreshold: 2
         livenessProbe:
           tcpSocket:
-            port: 8080
+            port: 22137
           initialDelaySeconds: 90
           periodSeconds: 40
           failureThreshold: 2     
