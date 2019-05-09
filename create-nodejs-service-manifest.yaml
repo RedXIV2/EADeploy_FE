@@ -26,13 +26,13 @@ spec:
         readinessProbe:
           tcpSocket:
             port: 8080
-          initialDelaySeconds: 5
+          initialDelaySeconds: 60
           periodSeconds: 30
           failureThreshold: 2
         livenessProbe:
           tcpSocket:
             port: 8080
-          initialDelaySeconds: 15
+          initialDelaySeconds: 90
           periodSeconds: 40
           failureThreshold: 2     
 ---
